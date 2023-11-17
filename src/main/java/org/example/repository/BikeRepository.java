@@ -2,11 +2,13 @@ package org.example.repository;
 
 import org.example.model.Bike;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class BikeRepository {
-    public int lastId = 0;
-    private List<Bike> bikes;
+    public long lastId = 1;
+    private List<Bike> bikes = new ArrayList<>();
+
     // Listar
     public List<Bike> list() {
         return bikes;
